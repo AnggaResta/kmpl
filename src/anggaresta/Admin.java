@@ -79,7 +79,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel24 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        jList1 = new javax.swing.JList<String>();
         jLabel9 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
 
@@ -103,7 +103,7 @@ public class Admin extends javax.swing.JFrame {
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/anggaresta/book3.jpg"))); // NOI18N
         jLabel19.setText("\n");
-        panel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 480));
+        panel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 480));
 
         jTabbedPane1.addTab("Home", panel1);
 
@@ -120,7 +120,7 @@ public class Admin extends javax.swing.JFrame {
 
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/anggaresta/book3.jpg"))); // NOI18N
         jLabel20.setText("\n");
-        panel3.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 480));
+        panel3.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 480));
 
         jTabbedPane1.addTab("Contact Us", panel3);
 
@@ -201,7 +201,7 @@ public class Admin extends javax.swing.JFrame {
 
         jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/anggaresta/book3.jpg"))); // NOI18N
         jLabel22.setText("\n");
-        panel4.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 360));
+        panel4.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 360));
 
         jTabbedPane1.addTab("Product", panel4);
 
@@ -239,7 +239,7 @@ public class Admin extends javax.swing.JFrame {
 
         jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/anggaresta/book3.jpg"))); // NOI18N
         jLabel23.setText("\n");
-        panel5.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 350));
+        panel5.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 450, 370));
 
         jTabbedPane1.addTab("Report", panel5);
 
@@ -258,59 +258,31 @@ public class Admin extends javax.swing.JFrame {
 
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/anggaresta/book3.jpg"))); // NOI18N
         jLabel24.setText("\n");
-        panel2.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 480));
+        panel2.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 480));
 
         jTabbedPane1.addTab("About Us", panel2);
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+        jList1.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "|Nama | Tanggal | Barang | Email | No. |", " 1", " 2 ", " 3", " 4", " " };
             public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
+            public Object getElementAt(int i) { return strings[i]; }
         });
         jList1.setToolTipText("");
         jScrollPane2.setViewportView(jList1);
 
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 54, 333, 270));
+
         jLabel9.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel9.setText("DATA PELANGGAN");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 18, -1, -1));
+        jLabel9.getAccessibleContext().setAccessibleName("jlabel9");
 
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/anggaresta/book3.jpg"))); // NOI18N
         jLabel18.setText("\n");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(110, 110, 110)
-                        .addComponent(jLabel9)))
-                .addContainerGap(71, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 433, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jLabel9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(35, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 15, Short.MAX_VALUE)))
-        );
-
-        jLabel9.getAccessibleContext().setAccessibleName("jlabel9");
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 360));
 
         jTabbedPane1.addTab("Data", jPanel1);
 
