@@ -16,7 +16,7 @@ public class pendaftaran1 extends javax.swing.JFrame {
 public static Connection con() throws SQLException, ClassNotFoundException{
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         String mysqlUrl ="jdbc:sqlserver://localhost\\SQLEXPRESS:1433;databaseName=projek;TrustServerCertificate=true;Encrypt=false;";
-        Connection con = DriverManager.getConnection(mysqlUrl,"angga","1234");
+        Connection con = DriverManager.getConnection(mysqlUrl,"angga1","1234");
         return con;
     }
     /**
@@ -164,13 +164,16 @@ public static Connection con() throws SQLException, ClassNotFoundException{
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3)
                             .addComponent(jLabel4))
-                        .addGap(111, 111, 111)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
+                                .addGap(111, 111, 111)
                                 .addComponent(jLabel2)
                                 .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(jTextField2)
-                            .addComponent(jTextField1))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGap(109, 109, 109)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField1)
+                                    .addComponent(jTextField2))))))
                 .addGap(31, 31, 31))
         );
         layout.setVerticalGroup(
